@@ -1,0 +1,298 @@
+#app { height: 100% }
+html,
+body {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Century gothic', sans-serif;
+    font-size: 14px;
+    background-color: #e5e5e5;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 400px;
+    height: 480px;
+
+}
+
+.swiper-slide {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+    background-image: url("assets/Raimond.jpg") !important;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+    background-image: url("assets/crud.png") !important;
+    background-size: contain;
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+    background-image: url("assets/theme.jpg") !important;
+    background-size: contain;
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+    background-image: url("assets/pet.jpg") !important;
+    background-size: auto;
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+    background-image: url("assets/crab.jpg") !important;
+    background-size: cover;
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+}
+.colomn{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.title{
+    width: 400px;
+    color: #444444;
+    margin: 0 auto 20px auto;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Helvetica', sans-serif;
+}
+.wrap-content{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    margin-top: -100px;
+}
+.description{
+    width: 500px;
+}
+.swiper-button-prev ,.swiper-button-next {
+    transform: rotate(-90deg);
+    top: 500px !important;
+    width: 80px !important;
+    height: 80px !important;
+    background-image: url("./assets/up-arrow-svgrepo-com.svg") !important;
+    background-size: cover;
+    transition: .5s;
+    &::after{
+        content: '' !important;
+    }
+    &:hover{
+        background-color: #66c0a7;
+        border-radius: 50%;
+    }
+    :active {
+        width: 70px;
+        height: 74px;
+    }
+}
+.swiper-button-next {
+    transform: rotate(90deg);
+}
+.swiper-button-prev{
+    left: -485px !important;
+}
+.swiper-button-next{
+    left: -300px !important;
+}
+.center{
+    width: 100px;
+}
+.subbody{
+    padding: 10px 0;
+    color: #ffffff;
+    background: linear-gradient(45deg, #6b968b, #8bdcc4);
+    border-radius: 20px;
+}
+.subbody-text{
+    font-size: 15px;
+    padding: 0 10px;
+}
+.subtitle{
+    font-size: 18px;
+    padding: 12px 0;
+    color: #727272;
+}
+
+.subbody {
+    background: linear-gradient(58deg, #2bcaa1, #5b857a, #2f6557, #50a68a, #7b8c87);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+.buttons{
+    display: flex;
+    justify-content: start;
+    margin-top: 7px;
+    margin-left: -12px;
+}
+.button-item{
+    text-decoration: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 8px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #66c0a7;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    &:hover {
+        background: #ffffff;
+        box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+        color: #4d4d4d;
+        transform: translateY(-7px);
+        cursor: pointer;
+    }
+}
+@media (max-device-width: 1200px) {
+    .swiper {
+        width: 380px;
+        height: 460px;
+    }
+    .title{
+        width: 300px;
+        color: #444444;
+        margin: 0 auto 20px auto;
+    }
+    .wrap-content{
+        margin-top: 0px;
+    }
+    .description{
+        width: 400px;
+    }
+    .swiper-button-prev ,.swiper-button-next {
+        top: 480px !important;
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .swiper-button-prev{
+        left: -400px !important;
+    }
+    .swiper-button-next{
+        left: -270px !important;
+    }
+    .subbody-text{
+        font-size: 13px;
+    }
+    .subtitle{
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .button-item {
+        width: 100px;
+        height: 45px;
+        margin: 4px 12px;
+        font-size: 9px;
+    }
+    .title{
+        margin: 0 auto 10px auto;
+    }
+}
+@media (max-device-width: 1020px) {
+    .swiper {
+        width: 310px;
+        height: 400px;
+
+    }
+    .title{
+        width: 260px;
+        color: #444444;
+        margin: 0 auto 10px auto;
+    }
+    .wrap-content{
+        margin-top: 0px;
+    }
+    .description{
+        width: 370px;
+    }
+    .swiper-button-prev ,.swiper-button-next {
+        top: 480px !important;
+        width: 70px !important;
+        height: 70px !important;
+    }
+    .swiper-button-prev{
+        left: -400px !important;
+    }
+    .swiper-button-next{
+        left: -270px !important;
+    }
+    .subbody-text{
+        font-size: 13px;
+    }
+    .subtitle{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .button-item {
+        width: 100px;
+        height: 45px;
+        margin: 1px 12px;
+        font-size: 9px;
+    }
+    .title{
+        margin: 0 auto 10px auto;
+    }
+}
